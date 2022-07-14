@@ -34,6 +34,9 @@ img {
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app .search {
@@ -64,4 +67,15 @@ img {
 
 .top {
   padding: 0 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 170px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
 }
