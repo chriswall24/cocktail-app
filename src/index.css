@@ -53,3 +53,15 @@ img {
 ::placeholder {
   color: #f8f8f8;
 }
+
+.description {
+  padding-bottom: 30px;
+}
+
+.ingredients {
+  padding-bottom: 30px;
+}
+
+.top {
+  padding: 0 20px;
+}
