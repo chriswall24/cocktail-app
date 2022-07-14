@@ -39,23 +39,21 @@ function App() {
             {data.drinks ? <p>{data.drinks[0].strGlass}</p> : null}
             {data.drinks ? <p>{data.drinks[0].strInstructions}</p> : null}
           </div>
-          <div className="ingredients">
-            {/* make iteration with .map maybe */}
-            {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient1}</p> : null}
-            {data.drinks ? <p>{data.drinks[0].strMeasure1}</p> : null}
-            {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient2}</p> : null}
-            {data.drinks ? <p>{data.drinks[0].strMeasure2}</p> : null}
-            {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient3}</p> : null}
-            {data.drinks ? <p>{data.drinks[0].strMeasure3}</p> : null}
-            {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient4}</p> : null}
+          <div className="bottom">
+            <div className="ingredients">
+              {/* make iteration with .map maybe */}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient1}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure1}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient2}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure2}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient3}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure3}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient4}</p> : null}
+            </div>
+            <div className="image">
+              {data.drinks ? <img src={data.drinks[0].strDrinkThumb} alt="Cocktail" /> : null }
+            </div>
           </div>
-          <div className="image">
-            {data.drinks ? <img src={data.drinks[0].strDrinkThumb} alt="Cocktail" /> : null }
-          </div>
-        </div>
-
-        <div className="bottom">
-
         </div>
       </div>
     </div>
