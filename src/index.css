@@ -21,6 +21,8 @@ code {
 img {
   height: 300px;
   width: 300px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 .title-text {
