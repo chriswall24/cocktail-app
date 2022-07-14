@@ -49,6 +49,19 @@ function App() {
               {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient3}</p> : null}
               {data.drinks ? <p>{data.drinks[0].strMeasure3}</p> : null}
               {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient4}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure4}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient5}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure5}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient6}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure6}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient7}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure7}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient8}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure8}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient9}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure9}</p> : null}
+              {data.drinks ? <p className='bold'>{data.drinks[0].strIngredient10}</p> : null}
+              {data.drinks ? <p>{data.drinks[0].strMeasure10}</p> : null}
             </div>
             <div className="image">
               {data.drinks ? <img src={data.drinks[0].strDrinkThumb} alt="Cocktail" /> : null }
