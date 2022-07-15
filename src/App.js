@@ -17,7 +17,9 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div>
+    {data.drinks ?
+    (<div className="app">
       <div className="title-text">
         <h1>Find That Cocktail</h1>
       </div>
@@ -73,6 +75,22 @@ function App() {
       </div>
       )) : null}
 
+    </div>) :
+      <div className="search-container">
+        <div className="title-text">
+          <h1>Find That Cocktail</h1>
+        </div>
+        <div className="search">
+          <input
+          value={cocktail}
+          onChange={event => setCocktail(event.target.value)}
+          onKeyPress={searchCocktail}
+          placeholder='Search by Name'
+          type="text"
+          />
+        </div>
+      </div>
+    }
     </div>
   );
 }
